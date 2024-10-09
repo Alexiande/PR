@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.sign_up"
+    android:background="@color/color_1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginEnd="150sp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:layout_marginEnd="290sp"
+                android:layout_marginTop="60sp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/phone_box"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/phone_number"
+                app:layout_constraintTop_toBottomOf="@+id/phone_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_profile_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/phone_box"
+                app:layout_constraintStart_toStartOf="@id/phone_box"
+                app:layout_constraintTop_toBottomOf="@id/phone_box"
+                android:layout_marginTop="60sp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/username_box"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/username"
+                app:layout_constraintTop_toBottomOf="@+id/username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username_box_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e_mail"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/username_box"
+                app:layout_constraintStart_toStartOf="@id/username_box"
+                app:layout_constraintTop_toBottomOf="@id/username_box"
+                android:layout_marginTop="60sp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/email_box"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/email_box"
+                app:layout_constraintStart_toStartOf="@id/email_box"
+                app:layout_constraintTop_toBottomOf="@id/email_box"
+                android:layout_marginTop="60sp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/pass_box"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/password"
+                app:layout_constraintTop_toBottomOf="@+id/password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_profile_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/repeat_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repeat_the_password"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/pass_box"
+                app:layout_constraintStart_toStartOf="@id/pass_box"
+                app:layout_constraintTop_toBottomOf="@id/pass_box"
+                android:layout_marginTop="60sp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/repeat_box"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/repeat_pass"
+                app:layout_constraintTop_toBottomOf="@+id/repeat_pass">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_profile_repeat_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/i_have_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/i_have_an_account"
+                android:textColor="@color/white"
+                android:background="@color/color_1"
+                app:layout_constraintTop_toTopOf="@id/repeat_pass"
+                app:layout_constraintStart_toStartOf="@id/repeat_pass"
+                app:layout_constraintTop_toBottomOf="@id/repeat_pass"
+                android:layout_marginTop="60sp"/>
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/sign_up1"
+                android:textColor="@color/white"
+                android:background="@color/color_1"
+                app:layout_constraintTop_toTopOf="@id/i_have_acc"
+                app:layout_constraintStart_toStartOf="@+id/i_have_acc"
+                app:layout_constraintTop_toBottomOf="@id/i_have_acc"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="65sp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

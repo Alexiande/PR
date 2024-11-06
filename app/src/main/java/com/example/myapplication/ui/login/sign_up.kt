@@ -43,7 +43,7 @@ class sign_up : Fragment() {
         binding.iHaveAcc
             .setOnClickListener{
             findNavController().navigate(
-                R.id.split1to2
+                R.id.action_sign_up2_to_loginFragment
             )
         }
         binding.signUp.setOnClickListener{
